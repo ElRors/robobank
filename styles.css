@@ -1,0 +1,82 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Cambiar la opacidad del color de fondo */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    width: 250px; 
+    height: auto;
+    margin: 10px; 
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilo para la cuadrícula de usuarios */
+#user-list .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -10px;
+}
+
+#user-list .row > div {
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.user-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px ;
+    text-align: center;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+.user-card h3 {
+    margin-bottom: 10px;
+}
+
+.user-card button {
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    #user-list .row > div {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    #user-list .row > div {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    #user-list .row > div {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
+
